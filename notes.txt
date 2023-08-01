@@ -82,3 +82,15 @@ border-radius = makes the border corners curvy.
 background-size
 Cover = the browser will manage the background image by itself. However, it may cut off the image.
 Contain = The image will not be distorted, will not be cut off, but it may not be able to fill the whole background. 
+
+----
+The actual width of an element contains padding + border
+
+lets say you have set a width of 100px
+
+100px + 50px + 10px = 160px
+
+box-sizing - content-box - by default value
+the height/width you have specified is being given to the content and not the container. the content will be fixed and the height/width that you will set, will be extra.
+
+border-box - the size of the content will adjust itself. the border/padding will be included in the width/height that you have set.

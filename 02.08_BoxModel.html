@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        /* universal selector - it will get applied to all the elements */
+
+        * {
+            /* CSS Reset */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: lightblue;
+            border: 2px solid blue;
+            /* it will apply the margin from all the four sides */
+            /* margin: 10px; */
+            /* top and bottom will be 10px and left/right will be 20px */
+            /* margin: 10px 20px; */
+            /* clockwise direction - to remember */
+            /* margin: top right bottom left */
+            /* margin: 4px 10px 30px 12px; */
+
+            /* negative margin = towards the direction */
+            /* positive margin = from the direction */
+            /* margin-left: -4px; */
+
+            /* margin: 10px;
+
+            width: 600px;
+            padding: 12px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam reiciendis cupiditate
+            recusandae quos quibusdam illo facilis consectetur consequuntur molestias delectus voluptatem sequi ab cum
+            ea, deserunt doloribus deleniti laboriosam?</p>
+    </div>
+    <div class="container">
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam reiciendis cupiditate
+            recusandae quos quibusdam illo facilis consectetur consequuntur molestias delectus voluptatem sequi ab cum
+            ea, deserunt doloribus deleniti laboriosam?</p>
+    </div>
+    <div class="container">
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam reiciendis cupiditate
+            recusandae quos quibusdam illo facilis consectetur consequuntur molestias delectus voluptatem sequi ab cum
+            ea, deserunt doloribus deleniti laboriosam?</p>
+    </div>
+</body>
+
+</html>
