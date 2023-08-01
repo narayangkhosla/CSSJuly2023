@@ -60,3 +60,25 @@ there are two ways:
 
 px = pixel = 1/96th of an inch
 1 inch = 2.5 cm
+===============================
+1st August 2023
+
+Assigning Colors:
+1. By Name - red, green, etc.
+2. by rgb
+3. by hexadecimal value = #1f3ff3
+1f = red; 3f = green; f3 = blue;
+4. by HSL (Hue, Saturation, Lightness)
+Hue = degree of the color field from 0 to 260.
+0 is red; 120 is green; 240 is blue;
+Saturation = %age value
+Lightness - %age value, where 0 black, 50% 100% white
+hsla
+a = alpha parameter is a number between 0.0 (fully transparent) to 1.0 (not transparent)
+
+
+border-radius = makes the border corners curvy.
+
+background-size
+Cover = the browser will manage the background image by itself. However, it may cut off the image.
+Contain = The image will not be distorted, will not be cut off, but it may not be able to fill the whole background. 
