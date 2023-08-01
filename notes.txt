@@ -1,0 +1,62 @@
+31st July 2023
+DRY - Do not repeat yourself
+SEPARATION OF CONCERNS - 
+
+CSS - Cascading Style Sheets
+- use to make web pages responsive -
+
+HTML is used to structure the web page, CSS takes the responsibility of the design.
+
+selector {
+    property : value;
+}
+
+// single selector
+p{
+    color: blue;
+}
+
+// multiple-selectors
+p, h1{
+    color: blue;
+}
+
+Ways to add CSS to the markup?
+1. inline => CSS is added to the elements directly using the style attribute.
+2. internal => CSS is kept inside the style tag inside the HTML file.
+3. external =>CSS is kept in an external sheet, and linked with the HTML file using the link tag.
+
+Which has the highest precedence?
+INLINE 
+Internal vs external => neither of them takes the priority. Which ever code has been written at the last, will take the priority.
+
+id vs class
+id - identifier - unique
+class - can be applied to multiple elements
+
+Selectors in CSS
+a. single element selector e.g. p
+b. grouping selector e.g. p, h1
+c. id selector 
+d. class selector
+
+BLOCK element => takes the whole available space. The next element starts at the new line.
+
+INLINE element => only takes the necessary space
+
+DEVELOPER TOOLS:
+elements = you can find your HTML code, including the live server injected code.
+user-defined style sheet => the default values provided by the browser.
+Sources => shows all the files that you have written for the project.
+how to check whether an element is a block or an inline
+
+FONTS
+web safe fonts = the common fonts that come as pre-installed with most of the OS.
+web fonts = downloaded from the internet.
+
+there are two ways:
+1. link = they will go in the HTML file.
+2. @import = they will go in the CSS file.
+
+px = pixel = 1/96th of an inch
+1 inch = 2.5 cm
