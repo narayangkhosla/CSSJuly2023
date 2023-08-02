@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navBar {
+            background-color: black;
+            border-radius: 30px;
+        }
+
+        .navBar ul li {
+            float: left;
+            list-style: none;
+            margin: 3px 11px;
+        }
+
+        .navBar ul li a {
+            text-decoration: none;
+            /* color: white; */
+            padding: 7px;
+        }
+
+        .navBar ul li a:hover {
+            background-color: crimson;
+        }
+
+        .search {
+            float: right;
+            padding: 12px 60px;
+        }
+
+        .search input {
+            border: 2px solid;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <!-- ul>(li>a)*3 -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+
+                <div class="search"> This is search box
+                    <input type="text" name="search" placeholder="Type anything to search">
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
