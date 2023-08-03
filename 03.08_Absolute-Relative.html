@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myGreenDiv {
+            background-color: yellowgreen;
+            width: 150px;
+            height: 150px;
+            /* position: relative;
+            right: 20px;
+            top: 20px; */
+        }
+
+        #myBlueDiv {
+            width: 75px;
+            height: 75px;
+            background-color: blue;
+            border: 1px solid black;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+    <!-- Case 1- when we have two divs (body as their parent - two divs are siblings) 
+        Case 2 - move the blue div inside the green div - the blue box will be relative to the green box, instead of the page/body.
+        By default, the position:absolute is relative to the actual page border, but the behavior changes when it is inside another element.
+        Here, both the parent and the child elements are set to absolute.
+        Case 3 - when the parent is relative, and the child is absolute.
+
+    -->
+</head>
+
+<body>
+
+    <div id="myGreenDiv">
+        <div id="myBlueDiv">
+        </div>
+
+    </div>
+</body>
+
+</html>

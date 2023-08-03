@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container {
+            height: 100px;
+            background-color: grey;
+        }
+
+        #box {
+            background-color: lightgreen;
+            height: 30px;
+            /* the box is fixed over everything else/ the box is floating over everything else. */
+            position: sticky;
+            /* specifies the space between the top of the element and the top of the viewport */
+            top: 20px;
+        }
+
+        /* When you have added a parent - container, the sticky position stopped working. */
+        /* Reason - there is no height set in the container. We need height attribute [when we have a parent] to work in case of sticky.  */
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem est perferendis enim. Reprehenderit
+        similique autem minima aperiam placeat dolore explicabo, nisi commodi nam ipsum numquam eum doloribus provident
+        obcaecati ab enim quasi reiciendis, consequuntur quibusdam impedit odio. A officiis delectus facere aliquam cum
+        dolorum harum voluptatem nemo illo, molestias suscipit aperiam tenetur culpa natus esse eligendi iste error
+        expedita fugit nisi perferendis ipsum vel. Voluptates, assumenda aliquam magni sunt beatae veritatis maiores
+        facere reprehenderit eum quae, commodi temporibus deserunt praesentium neque harum, molestiae a doloribus optio
+        consequatur laudantium qui dolore! Veniam id accusamus alias quis odio libero aliquam quod.</p>
+
+    <div id="container">
+        <div id="box">
+            Sticky
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem est perferendis enim. Reprehenderit
+        similique autem minima aperiam placeat dolore explicabo, nisi commodi nam ipsum numquam eum doloribus provident
+        obcaecati ab enim quasi reiciendis, consequuntur quibusdam impedit odio. A officiis delectus facere aliquam cum
+        dolorum harum voluptatem nemo illo, molestias suscipit aperiam tenetur culpa natus esse eligendi iste error
+        expedita fugit nisi perferendis ipsum vel. Voluptates, assumenda aliquam magni sunt beatae veritatis maiores
+        facere reprehenderit eum quae, commodi temporibus deserunt praesentium neque harum, molestiae a doloribus optio
+        consequatur laudantium qui dolore! Veniam id accusamus alias quis odio libero aliquam quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem est perferendis enim. Reprehenderit
+        similique autem minima aperiam placeat dolore explicabo, nisi commodi nam ipsum numquam eum doloribus provident
+        obcaecati ab enim quasi reiciendis, consequuntur quibusdam impedit odio. A officiis delectus facere aliquam cum
+        dolorum harum voluptatem nemo illo, molestias suscipit aperiam tenetur culpa natus esse eligendi iste error
+        expedita fugit nisi perferendis ipsum vel. Voluptates, assumenda aliquam magni sunt beatae veritatis maiores
+        facere reprehenderit eum quae, commodi temporibus deserunt praesentium neque harum, molestiae a doloribus optio
+        consequatur laudantium qui dolore! Veniam id accusamus alias quis odio libero aliquam quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem est perferendis enim. Reprehenderit
+        similique autem minima aperiam placeat dolore explicabo, nisi commodi nam ipsum numquam eum doloribus provident
+        obcaecati ab enim quasi reiciendis, consequuntur quibusdam impedit odio. A officiis delectus facere aliquam cum
+        dolorum harum voluptatem nemo illo, molestias suscipit aperiam tenetur culpa natus esse eligendi iste error
+        expedita fugit nisi perferendis ipsum vel. Voluptates, assumenda aliquam magni sunt beatae veritatis maiores
+        facere reprehenderit eum quae, commodi temporibus deserunt praesentium neque harum, molestiae a doloribus optio
+        consequatur laudantium qui dolore! Veniam id accusamus alias quis odio libero aliquam quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem est perferendis enim. Reprehenderit
+        similique autem minima aperiam placeat dolore explicabo, nisi commodi nam ipsum numquam eum doloribus provident
+        obcaecati ab enim quasi reiciendis, consequuntur quibusdam impedit odio. A officiis delectus facere aliquam cum
+        dolorum harum voluptatem nemo illo, molestias suscipit aperiam tenetur culpa natus esse eligendi iste error
+        expedita fugit nisi perferendis ipsum vel. Voluptates, assumenda aliquam magni sunt beatae veritatis maiores
+        facere reprehenderit eum quae, commodi temporibus deserunt praesentium neque harum, molestiae a doloribus optio
+        consequatur laudantium qui dolore! Veniam id accusamus alias quis odio libero aliquam quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem est perferendis enim. Reprehenderit
+        similique autem minima aperiam placeat dolore explicabo, nisi commodi nam ipsum numquam eum doloribus provident
+        obcaecati ab enim quasi reiciendis, consequuntur quibusdam impedit odio. A officiis delectus facere aliquam cum
+        dolorum harum voluptatem nemo illo, molestias suscipit aperiam tenetur culpa natus esse eligendi iste error
+        expedita fugit nisi perferendis ipsum vel. Voluptates, assumenda aliquam magni sunt beatae veritatis maiores
+        facere reprehenderit eum quae, commodi temporibus deserunt praesentium neque harum, molestiae a doloribus optio
+        consequatur laudantium qui dolore! Veniam id accusamus alias quis odio libero aliquam quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eaque expedita sequi modi a! Ex, numquam?
+        Inventore nihil a atque quos laudantium aliquid optio assumenda ipsum dolore accusamus maiores reiciendis modi
+        temporibus rerum id sunt tenetur officiis, nam ipsam esse illum! Eligendi qui vero voluptatum perspiciatis
+        dolore minima fugiat porro nesciunt quisquam ipsa rem nihil ea esse quos reprehenderit, iusto distinctio quam
+        consectetur. Perspiciatis quasi a obcaecati similique. Sint, aliquid! Laudantium tempore cumque, rem quisquam
+        repudiandae, nostrum repellendus numquam ipsa ad aperiam, iste quibusdam alias! Maiores, vero doloremque! Velit
+        doloremque ducimus nesciunt labore voluptatibus porro maiores omnis. Placeat cum ducimus rem quisquam, nobis
+        consequuntur voluptatem tempore sit. Rem vitae quam voluptatibus similique est ex autem placeat earum dolores
+        ullam, numquam maxime nulla. Dignissimos explicabo totam, numquam rem blanditiis placeat iure aperiam sequi,
+        facere incidunt ullam aliquam unde debitis tenetur quibusdam mollitia ex provident. Est reiciendis excepturi
+        quaerat sunt doloremque soluta quo id ducimus, libero neque suscipit et, nostrum quis minima dicta quisquam enim
+        in deleniti asperiores cupiditate? Eligendi placeat deserunt harum obcaecati mollitia architecto ipsa, itaque
+        aut rem provident facilis praesentium dolor id iure fuga quis laudantium expedita eos nisi quidem in error.
+        Dicta iste dolorem quasi perspiciatis dolores adipisci fugit ipsa omnis possimus, perferendis, similique neque
+        non commodi facilis quisquam repudiandae suscipit at, pariatur error? Doloremque sit distinctio laboriosam fuga
+        at architecto similique nemo facilis doloribus voluptatibus exercitationem blanditiis eligendi porro ipsam
+        perferendis repellendus corporis quos modi libero maxime, obcaecati consequatur. Consequatur neque non vitae
+        consequuntur illum, repudiandae porro animi harum ea voluptas dolore pariatur eligendi laborum obcaecati
+        excepturi. Maiores molestias enim est sint accusamus, amet in doloremque. Temporibus minima facere minus maiores
+        fugit quo architecto, quibusdam, placeat nam unde perferendis doloribus ipsam recusandae, eos saepe obcaecati
+        consequuntur corrupti. Tempora voluptatum nemo placeat minima, nobis officia quasi laudantium, inventore,
+        voluptatem illo tenetur odio sit libero! Iure iusto minima nemo repudiandae debitis temporibus, deleniti ab
+        quasi asperiores veritatis excepturi maxime amet mollitia commodi aliquam officiis? Tenetur quas harum, rerum
+        corporis, explicabo, labore eos aperiam minima obcaecati sequi voluptas. Porro magnam accusamus ipsum commodi
+        amet facere alias aut, reprehenderit eius, quis voluptas eaque ratione neque corporis praesentium atque ea?
+        Itaque earum explicabo provident consectetur quisquam, dicta temporibus fugit est dolorem illum tempore saepe
+        nesciunt sequi quas iste odit, sed aliquam perspiciatis ab delectus. Illum maiores, ab ex fuga labore iure
+        placeat tempora totam mollitia provident amet cumque excepturi earum quas recusandae.</p>
+
+</body>
+
+</html>

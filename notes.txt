@@ -99,3 +99,23 @@ border-box - the size of the content will adjust itself. the border/padding will
 float, clear
 flex
 grid
+==============
+3rd August 2023
+display: inline => will take the necessary width. span 
+display: block => the element will take the whole block. We can change the width.
+display: inline-block =>if we want to make an element inline and be able to change its width.
+
+
+========
+CSS Positions
+1. static - by default = 
+2. relative => relative to its normal position, and will leave a gap at its normal position
+3. absolute
+4. fixed
+5. sticky
+
+Flexbox = flexible + box;
+designing layout 
+flex - one dimensional layout - rows or columns
+
+display: flex;
