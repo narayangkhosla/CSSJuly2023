@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- float: left; display: inline-block; display: flex; -->
+    <style>
+        .container {
+            height: 600px;
+            width: 100%;
+            border: 2px solid blue;
+            /* initialises the box as a container */
+            display: flex;
+
+            /* Flex properties for flex container */
+            /* flex-direction - row - BY default */
+            /* flex-direction: column;
+            flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap;
+            flex-wrap: wrap-reverse; */
+
+            /* shorthand for writing the above properties */
+            /* flex-flow: flex-direction flex-wrap; */
+
+            /* flex-flow: column wrap; */
+
+            /* justifying the content in the HORIZONTAL direction */
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            /* justifying the content in the VERTICAL direction */
+            align-items: center;
+            /* by default is flex-start */
+            align-items: flex-start;
+            /* align-items: flex-end; */
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid;
+            margin: 2px;
+            padding: 2px;
+
+        }
+
+        /* Flex properties for flex items */
+
+        /* order = higher the order, later it shows up in the container. 
+        flex-grow = when the container grows, the box will grow up faster as compared to the other boxes. negative number are invalid.
+        flex-shrink = higher the number, the box will shrink quicker.
+        /* when flex-direction is set to row, flex-basis controls the width */
+        /* when flex-direction is set to column, flex-basis controls the height */
+        #item-1 {
+            /* order: 21; */
+            background-color: green;
+            /* flex-grow: 2; 
+            flex-shrink: 3;
+            flex-basis: 400px; */
+
+            /* flex: flex-grow flex-shrink flex-basis */
+            flex: 2 3 400px;
+        }
+
+        #item-2 {
+            /* order: 3; */
+            /* flex-grow: 3; */
+
+            align-self: center;
+            align-self: flex-start;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+
+
+
+
+</body>
+
+</html>

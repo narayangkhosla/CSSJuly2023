@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Ways to achieve responsive design 
+        1. setting up the viewport (line 6)
+        2. use em/rem/vh/vw units
+        3. use media queries
+        4. max-height, min-height, max-width, min-width
+    -->
+
+    <!-- em = relative to the parent 
+        use of em: when the parent element is re-sized, the child element(s) will be resized accordingly.
+
+        rem = root em = this works on the base-size of the HTML root element
+    -->
+    <style>
+        html {
+            font-size: 25px;
+        }
+
+        .container {
+            font-size: 10px;
+            border: 2px solid;
+            height: 100vh;
+            width: 30vw;
+        }
+
+        #first {
+            /* font-size = 10*4 = 40px */
+            /* font-size: 4em; */
+            /* padding = takes the font size into consideration. the font is 40px, so padding of 2em will be 40*2 = 80px */
+            /* padding: 2em; */
+            /* font-size = 25*2 = 50px */
+            /* font-size: 2rem; */
+            /* padding of 2rem will be 25*2 = 50px */
+            /* padding: 2rem; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">First Heading</h1>
+        <h1 id="second">Second Heading</h1>
+        <h1 id="third">Third Heading<h1>
+</body>
+
+</html>
