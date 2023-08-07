@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .isRequired::after {
+            content: '*';
+            color: red;
+            padding-left: 2px;
+        } */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #333;
+            color: white;
+            margin: 0;
+            /* background: url(/images/food.jpeg) no-repeat center center/cover;
+            opacity: 0.4; */
+        }
+
+        header::before {
+            content: '';
+            background: url(/images/food.jpeg) no-repeat center center/cover;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* sending the image back, bringing the text forward */
+            z-index: -1;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            height: 100vh;
+        }
+
+        header>h1 {
+
+            font-size: 4rem;
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- we use before and after selectors to insert some content, we use the 'content' property 
+    allows us to add some content before or after the elements
+-->
+
+    <!-- <form action="">
+        <label class="isRequired" for="name">Name</label>
+        <input type="text" id="name">
+    </form> -->
+
+    <header>
+        <h1>Hello World</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident doloribus officiis dolorum iste amet
+            eveniet numquam sunt dicta ad? Laboriosam facilis delectus quibusdam recusandae, perferendis quidem quia
+            itaque eos aliquam, deleniti explicabo ducimus consectetur, voluptate dignissimos odit modi. Id molestias
+            perferendis dicta fuga vel totam accusamus dolores, non laboriosam blanditiis.</p>
+    </header>
+    <section>
+        <h2>Welcome All</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quaerat repellat dolores a beatae fugiat
+            molestiae, tenetur ducimus nobis non! Ipsam alias voluptas fugit. Et placeat temporibus repudiandae amet
+            earum consequatur quidem ex, cumque voluptates asperiores, deleniti enim corporis maiores. Mollitia, rerum.
+            Repellendus aperiam accusantium ducimus, magni voluptatem obcaecati voluptates?</p>
+    </section>
+</body>
+
+</html>
