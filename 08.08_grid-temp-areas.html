@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            background-color: teal;
+            border: 2px solid;
+            padding: 12px 23px;
+        }
+
+        nav {
+            grid-area: myNav;
+        }
+
+        section {
+            grid-area: mySection;
+        }
+
+        aside {
+            grid-area: myAside;
+        }
+
+        footer {
+            grid-area: myFooter;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        .container {
+            display: grid;
+            gap: 1rem;
+            /* All the rows MUST have exact same columns */
+            grid-template-areas:
+
+                'myNav myNav myNav myNav'
+                'mySection mySection mySection myAside'
+                'myFooter myFooter myFooter myFooter'
+            ;
+        }
+
+        @media (min-width:0) and (max-width:400px) {
+            body {
+                background-color: yellowgreen;
+            }
+
+            .container {
+                grid-template-areas:
+                    'myNav myNav myNav myNav'
+                    'mySection mySection mySection mySection'
+                    'myAside myAside myAside myAside'
+                    'myFooter myFooter myFooter myFooter'
+                ;
+            }
+
+            /* aside {
+                display: none;
+            } */
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            footer {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact Us</span>
+
+        </nav>
+        <section class="item">
+            SECTION Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eligendi libero sequi reiciendis! Totam
+            beatae
+            aperiam blanditiis eveniet laboriosam fugiat nobis recusandae repellat neque deleniti non laborum ipsum
+            quisquam necessitatibus modi nemo quibusdam explicabo ipsam quo, natus eligendi possimus omnis in corrupti?
+            At necessitatibus reiciendis veniam excepturi, culpa officiis veritatis nesciunt nisi voluptatum
+            reprehenderit adipisci eum laudantium quo provident. Voluptatum neque autem nihil ipsam quidem porro alias
+            nisi mollitia saepe perferendis, officia iusto facere maxime optio, laborum rem aut totam? Sunt tenetur
+            minima iure ea magnam quibusdam ullam magni aliquam dolorum, iusto aspernatur reiciendis perferendis neque
+            autem, consequuntur asperiores, vitae laboriosam sint ipsum odit molestiae quas amet maiores excepturi! Id
+            nihil obcaecati est, numquam quae tempore quos modi incidunt unde vitae sed sapiente ipsum et deleniti
+            similique explicabo, ea facilis nisi consectetur. Cumque debitis officia, dicta rem architecto quibusdam
+            voluptatibus facere, eaque ut, veritatis distinctio! Cupiditate dolor minus repellendus numquam rem magni.
+            Beatae, quaerat possimus. Sequi, hic amet, est facere veritatis perferendis praesentium, sit facilis
+            perspiciatis enim debitis eveniet suscipit unde! Fugit laborum voluptates fugiat possimus provident. Nihil
+            facere libero repellendus doloremque, veritatis perspiciatis rerum, ratione ad quae aspernatur tenetur ipsa
+            autem sequi nobis corrupti consequuntur necessitatibus minima reiciendis fugiat dolor excepturi consectetur
+            fuga illo voluptatum! Illum reprehenderit esse exercitationem fugiat nihil quaerat rem voluptate doloremque
+            veniam sunt odio, officia expedita dolorem tempore voluptates eum ipsa autem blanditiis repellat ducimus
+            iure nemo! Esse modi consequatur vero magnam laudantium expedita dolorem sed quis quod omnis neque totam est
+            voluptatibus odit, ut culpa natus cum ipsa ex reprehenderit non sint ad! Odit quo dicta corrupti quasi minus
+            odio corporis autem architecto mollitia, quia sint voluptatem doloremque temporibus repellendus repellat
+            fuga, nostrum id quas. Fugiat commodi alias sit. Dolorum est rem, consectetur, id, laudantium possimus a
+            tenetur voluptates pariatur iure quo assumenda eveniet ea libero corrupti. Tenetur omnis aperiam reiciendis
+            dolorum maiores esse veritatis reprehenderit exercitationem cum quo rem sed maxime blanditiis nobis
+            dignissimos voluptatum, optio culpa! Possimus quam odio velit dicta error quidem adipisci, pariatur magni
+            quisquam? Voluptates eaque velit id sapiente, quos ullam officia quidem nam sequi, ipsum neque expedita,
+            necessitatibus magni hic dolores eligendi explicabo? Quos explicabo nihil, molestiae vel reprehenderit
+            exercitationem nobis nisi ad libero debitis accusantium. Sint impedit repudiandae, illum dolorem dignissimos
+            ipsam. Quis aliquam perferendis, nesciunt ipsa sed quo et iure. Expedita omnis quasi cum a eaque alias
+            eligendi dolorum commodi asperiores iusto, dolor quas consectetur aliquam!
+        </section>
+        <aside class="item">
+            ASIDE Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, doloribus nesciunt excepturi
+            illum
+            perferendis sapiente totam sit rerum quia, ex, necessitatibus ullam amet accusamus voluptatibus unde commodi
+            perspiciatis non fugit. Debitis ab voluptatem delectus, laborum totam ipsam enim voluptatibus iste error
+            laudantium quisquam, iusto praesentium aperiam rerum doloribus quaerat expedita. Veniam aliquam eius,
+            voluptatem vero fuga excepturi obcaecati vitae nesciunt culpa a placeat? Est, hic! Praesentium labore
+            dolores voluptatum, eveniet laboriosam accusamus numquam architecto porro cupiditate. Illo odit accusantium
+            reiciendis doloribus at. Deserunt pariatur omnis vero reiciendis? At quasi pariatur quos repudiandae tenetur
+            obcaecati nobis dicta similique nihil facere vel laboriosam molestias consequatur earum, porro laudantium,
+            praesentium corrupti necessitatibus iure sit quis! Commodi natus, placeat eos repellendus ipsum sit,
+            repellat est hic ipsa, ad omnis. Et iure sint consequuntur eos, beatae iste id harum tempora veritatis
+            tempore, quis minima nesciunt a perferendis excepturi in fuga! Aut itaque, nesciunt expedita sapiente
+            pariatur, quo quasi enim unde voluptatum veritatis officia quaerat nostrum alias. Non nostrum blanditiis
+            necessitatibus beatae facilis illo reprehenderit placeat inventore ut hic repellendus dolore optio quod
+            incidunt commodi praesentium numquam laudantium iure, libero minima labore quos! Consequuntur quidem
+            provident repudiandae unde quo vero at sit, nemo laborum officiis et dolores molestiae eveniet explicabo
+            iste, voluptates dolorum reiciendis expedita, totam voluptatibus temporibus animi esse. Perferendis
+            doloremque facilis quidem vero, dignissimos, magnam voluptate possimus officiis tempora aspernatur dolores,
+            iure a itaque corporis molestiae cum voluptatibus necessitatibus aliquid ad nemo quis consequatur nobis!
+            Necessitatibus voluptates corporis, soluta odio inventore eveniet quisquam itaque! Veritatis nesciunt, et
+            facere, fuga totam labore pariatur sapiente dicta porro accusantium facilis quis quasi minus sed aliquam
+            corrupti mollitia autem rem sunt eaque nulla ducimus non nisi animi. Quae praesentium vero amet facilis eos
+            aliquam assumenda veniam dolorem delectus sint illo soluta, quas vel! Dignissimos commodi nobis delectus
+            nulla.
+        </aside>
+
+        <footer class="item">
+            Copyright &copy; by Narayan, 2023. Made with &hearts;
+        </footer>
+    </div>
+
+</body>
+
+</html>

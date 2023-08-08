@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            /* grid-template-columns: repeat(4, 2fr); */
+            /* grid-template-rows: 3fr 3fr 4fr; */
+
+            /* writing code for responsiveness */
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+
+        .box {
+            background-color: lightblue;
+            border: 2px solid;
+            padding: 20px;
+        }
+
+        /* targeting the first child */
+        .box:first-child {
+            /* grid-column-start: 1; */
+            /* grid-column-end: 3; */
+            /* grid-column: 1/5; */
+
+            /* grid-row: 1/6; */
+
+            /* spanning across two columns */
+            /* grid-column: 1 / 3; */
+            /* spanning across three columns */
+            /* grid-column: 1/ span 3; */
+
+        }
+
+        /* targeting the last child */
+        .box:last-child {
+            /* grid-column: 2/5;  */
+            /* grid-column: 2/span 3; */
+        }
+
+        /* targeting a specific child */
+        .box:nth-child(6) {
+            /* grid-column: 2/span 2;
+            grid-row: 2/span 3; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box">Item1</div>
+        <div class="box">Item2</div>
+        <div class="box">Item3</div>
+        <div class="box">Item4</div>
+        <div class="box">Item5</div>
+        <div class="box">Item6</div>
+        <div class="box">Item7</div>
+        <div class="box">Item8</div>
+        <div class="box">Item9</div>
+        <div class="box">Item10</div>
+        <div class="box">Item11</div>
+        <div class="box">Item12</div>
+        <div class="box">Item13</div>
+        <div class="box">Item14</div>
+        <div class="box">Item15</div>
+        <div class="box">Item16</div>
+        <div class="box">Item17</div>
+        <div class="box">Item18</div>
+        <div class="box">Item19</div>
+        <div class="box">Item20</div>
+        <div class="box">Item21</div>
+        <div class="box">Item22</div>
+        <div class="box">Item23</div>
+        <div class="box">Item24</div>
+        <div class="box">Item25</div>
+        <div class="box">Item26</div>
+        <div class="box">Item27</div>
+        <div class="box">Item28</div>
+        <div class="box">Item29</div>
+        <div class="box">Item30</div>
+    </div>
+</body>
+
+</html>

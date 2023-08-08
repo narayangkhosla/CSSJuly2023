@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: #f0e7e7;
+            border: 2px solid;
+        }
+
+        .grid {
+            display: grid;
+            /* grid-template-columns: 2fr 1fr 2fr; */
+            grid-template-rows: 1fr 2fr 3fr;
+            /* the rest of the 12 rows (15-3) will be allocated 1fr */
+            grid-auto-rows: 2fr;
+            grid-template-columns: repeat(4, 2fr);
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box">This is box number 1</div>
+        <div class="box">This is box number 2</div>
+        <div class="box">This is box number 3</div>
+        <div class="box">This is box number 4</div>
+        <div class="box">This is box number 5</div>
+        <div class="box">This is box number 6</div>
+        <div class="box">This is box number 7</div>
+        <div class="box">This is box number 8</div>
+        <div class="box">This is box number 9</div>
+        <div class="box">This is box number 10</div>
+        <div class="box">This is box number 11</div>
+        <div class="box">This is box number 12</div>
+        <div class="box">This is box number 13</div>
+        <div class="box">This is box number 14</div>
+        <div class="box">This is box number 15</div>
+        <div class="box">This is box number 16</div>
+        <div class="box">This is box number 17</div>
+        <div class="box">This is box number 18</div>
+        <div class="box">This is box number 19</div>
+        <div class="box">This is box number 20</div>
+    </div>
+</body>
+
+</html>
